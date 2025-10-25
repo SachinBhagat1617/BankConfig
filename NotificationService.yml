@@ -10,6 +10,7 @@ spring:
           auth: true
           starttls:
             enable: true
+  
   kafka:
     consumer:
       bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS}
@@ -20,6 +21,7 @@ spring:
         spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
         spring.json.value.default.type: com.ofss.NotificationService.dto.EmailEventDTO
         spring.json.trusted.packages: "*"
+        spring.json.use.type.headers: false
 
 server:
   port: ${SERVER_PORT}
