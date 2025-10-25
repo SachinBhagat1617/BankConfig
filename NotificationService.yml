@@ -5,11 +5,11 @@ spring:
     username: ${SPRING_MAIL_USERNAME}
     password: ${SPRING_MAIL_PASSWORD}
     properties:
-      mail.smtp.auth: true
-      mail.smtp.starttls.enable: true
-      mail.smtp.starttls.required: true
-      mail.smtp.ssl.trust: smtp.gmail.com
-    default-encoding: UTF-8
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
   
   kafka:
     consumer:
