@@ -11,6 +11,11 @@ spring:
           starttls:
             enable: true
             required: true
+          ssl:
+            trust: smtp.gmail.com
+        transport:
+          protocol: smtp
+    default-encoding: UTF-8
   
   kafka:
     consumer:
