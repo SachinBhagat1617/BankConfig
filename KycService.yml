@@ -4,16 +4,16 @@ spring:
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: oracle.jdbc.OracleDriver
-
+  
   servlet:
     multipart:
       enabled: true
       max-file-size: 10MB
       max-request-size: 10MB
-
+  
   kafka:
     producer:
-      bootstrap-servers: ${SPRING_KAFKA_PRODUCER_BOOTSTRAP-SERVERS}
+      bootstrap-servers: ${SPRING_KAFKA_PRODUCER_BOOTSTRAP_SERVERS}
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
@@ -22,7 +22,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE}
+      defaultZone: ${EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE}
     fetch-registry: true
     register-with-eureka: true
   instance:
