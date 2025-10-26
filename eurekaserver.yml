@@ -1,6 +1,5 @@
 server:
-  port: 8
-  761   
+  port: 8761   
 
 eureka:
   client:
