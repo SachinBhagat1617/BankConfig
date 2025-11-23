@@ -25,6 +25,7 @@ keycloak:
     server-url: ${KEYCLOAK_SERVER_URL}
     realm: ${KEYCLOAK_REALM}
     client-id: admin-cli
+    client-uid: ${KEYCLOAK_CLIENT_UID}
 
 server:
   port: 5081
